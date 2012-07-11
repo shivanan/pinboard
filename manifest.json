@@ -1,0 +1,26 @@
+{
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ], 
+      "matches": [
+        "http://*/*"
+      ]
+    }
+  ], 
+  "name": "Pinboard Bookmarker",
+  "options_page": "options.html",
+  "background_page":"background.html",
+  "version": "0.64",
+  "description": "Pinboard Bookmarker for Chrome",
+  "permissions": [
+    "tabs"
+    ,"https://api.pinboard.in/"
+  ],
+  "browser_action": {
+      "default_title": "Pinboard",
+      "default_icon": "pinboard.gif",
+      "popup": "popup.html"
+  }  
+}
